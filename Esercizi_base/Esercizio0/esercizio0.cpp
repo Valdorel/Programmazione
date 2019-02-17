@@ -23,10 +23,5 @@ int main(int argc, char const *argv[]) {
   std::cout << "Il risultato dell'integrale e': "<< result << '\n';
 
 
-
-
-
-
-
   return 0;
 }
