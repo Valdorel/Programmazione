@@ -3,7 +3,6 @@
 
 double f(double x) {
   return std::sin(x);
-  //int x
 }
 
 int main(int argc, char const *argv[]) {
