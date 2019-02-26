@@ -1,0 +1,164 @@
+\hypertarget{structcomplesso}{}\section{complesso Struct Reference}
+\label{structcomplesso}\index{complesso@{complesso}}
+
+
+{\ttfamily \#include $<$complesso.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcomplesso_ac8649cdc2a8bb50ab28b57745f3e5bb1}{complesso}} ()
+\item 
+\mbox{\hyperlink{structcomplesso_a05ead874809d0266245c2b1cb650ff6f}{complesso}} (double r, double i)
+\item 
+\mbox{\hyperlink{structcomplesso_a04d5503bbd98d2d0e25bec23d2b2e619}{$\sim$complesso}} ()
+\item 
+\mbox{\hyperlink{structcomplesso_af07bfd9970163010c92eb5bf7a150d85}{complesso}} (const \mbox{\hyperlink{structcomplesso}{complesso}} \&other)
+\item 
+\mbox{\hyperlink{structcomplesso}{complesso}} \& \mbox{\hyperlink{structcomplesso_a48a9213a9253054342ea512923847c84}{operator=}} (const \mbox{\hyperlink{structcomplesso}{complesso}} \&other)
+\item 
+\mbox{\hyperlink{structcomplesso}{complesso}} \mbox{\hyperlink{structcomplesso_aed83284e359857ed16b502af59b0cb66}{operator+}} (const \mbox{\hyperlink{structcomplesso}{complesso}} \&dx) const
+\item 
+double \mbox{\hyperlink{structcomplesso_a2a63410f0ab5c6c040fcd520a6dbf1ea}{operator!}} (void) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcomplesso_a18f663f0e6dbf937ad021ee6be7dfd6d}\label{structcomplesso_a18f663f0e6dbf937ad021ee6be7dfd6d}} 
+double \mbox{\hyperlink{structcomplesso_a18f663f0e6dbf937ad021ee6be7dfd6d}{re}}
+\begin{DoxyCompactList}\small\item\em Parte reale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcomplesso_aa39281c7cd586948f400de2fe6ce4582}\label{structcomplesso_aa39281c7cd586948f400de2fe6ce4582}} 
+double \mbox{\hyperlink{structcomplesso_aa39281c7cd586948f400de2fe6ce4582}{im}}
+\begin{DoxyCompactList}\small\item\em Parte immaginaria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe che rappresenta un numero complesso N\+O\+TA\+: sono implementati diversi operatori, sia unari che binari. A parte l\textquotesingle{}operatore di assegnamento e quello di conversione di tipo, tutti gli altri operatori si possono implementare indifferentemente come funzioni membro o funzioni globali. Se sono implementati come funzioni globale, potrebbe essere necessario avere accesso ai dati privati della classe. In questo caso, di norma, si dichiarano friend della classe.
+
+La scelta degli operatori da ridefinire e\textquotesingle{} stata fatta a titolo esemplificativo. 
+
+Definition at line 17 of file complesso.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structcomplesso_ac8649cdc2a8bb50ab28b57745f3e5bb1}\label{structcomplesso_ac8649cdc2a8bb50ab28b57745f3e5bb1}} 
+\index{complesso@{complesso}!complesso@{complesso}}
+\index{complesso@{complesso}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{complesso()}{complesso()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily complesso\+::complesso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Costruttore di default 
+
+Definition at line 4 of file complesso.\+cpp.
+
+\mbox{\Hypertarget{structcomplesso_a05ead874809d0266245c2b1cb650ff6f}\label{structcomplesso_a05ead874809d0266245c2b1cb650ff6f}} 
+\index{complesso@{complesso}!complesso@{complesso}}
+\index{complesso@{complesso}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{complesso()}{complesso()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily complesso\+::complesso (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{i }\end{DoxyParamCaption})}
+
+Costruttore secondario
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & parte reale \\
+\hline
+{\em imm} & parte immaginaria \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file complesso.\+cpp.
+
+\mbox{\Hypertarget{structcomplesso_a04d5503bbd98d2d0e25bec23d2b2e619}\label{structcomplesso_a04d5503bbd98d2d0e25bec23d2b2e619}} 
+\index{complesso@{complesso}!````~complesso@{$\sim$complesso}}
+\index{````~complesso@{$\sim$complesso}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{$\sim$complesso()}{~complesso()}}
+{\footnotesize\ttfamily complesso\+::$\sim$complesso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Distruttore 
+
+Definition at line 21 of file complesso.\+cpp.
+
+\mbox{\Hypertarget{structcomplesso_af07bfd9970163010c92eb5bf7a150d85}\label{structcomplesso_af07bfd9970163010c92eb5bf7a150d85}} 
+\index{complesso@{complesso}!complesso@{complesso}}
+\index{complesso@{complesso}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{complesso()}{complesso()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily complesso\+::complesso (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcomplesso}{complesso}} \&}]{other }\end{DoxyParamCaption})}
+
+Costruttore di copia
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & complesso da copiare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file complesso.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structcomplesso_a2a63410f0ab5c6c040fcd520a6dbf1ea}\label{structcomplesso_a2a63410f0ab5c6c040fcd520a6dbf1ea}} 
+\index{complesso@{complesso}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily double complesso\+::operator! (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+Operatore coniugato di un numero complesso E\textquotesingle{} un operatore unario\+: cc1 = !c1;
+
+\begin{DoxyReturn}{Returns}
+il complesso coniugato di $\ast$this 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file complesso.\+cpp.
+
+\mbox{\Hypertarget{structcomplesso_aed83284e359857ed16b502af59b0cb66}\label{structcomplesso_aed83284e359857ed16b502af59b0cb66}} 
+\index{complesso@{complesso}!operator+@{operator+}}
+\index{operator+@{operator+}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcomplesso}{complesso}} complesso\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcomplesso}{complesso}} \&}]{dx }\end{DoxyParamCaption}) const}
+
+Operatore somma tra numeri complessi E\textquotesingle{} un operatore binario e permette di fare l\textquotesingle{}operazione c3 = c1 + c2;
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & operando di destra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un numero complesso con la somma 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file complesso.\+cpp.
+
+\mbox{\Hypertarget{structcomplesso_a48a9213a9253054342ea512923847c84}\label{structcomplesso_a48a9213a9253054342ea512923847c84}} 
+\index{complesso@{complesso}!operator=@{operator=}}
+\index{operator=@{operator=}!complesso@{complesso}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcomplesso}{complesso}} \& complesso\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcomplesso}{complesso}} \&}]{other }\end{DoxyParamCaption})}
+
+Operatore di assegnamento
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & complesso da copiare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+il complesso copiato 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file complesso.\+cpp.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edoardo/\+Downloads/complesso/complesso.\+h\item 
+C\+:/\+Users/\+Edoardo/\+Downloads/complesso/complesso.\+cpp\end{DoxyCompactItemize}
